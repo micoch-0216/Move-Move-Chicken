@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 每日任務頁：整頁可往下滑動，底部導覽固定不遮擋 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- 可滑動內容：留出底部 56dp 給導覽列，不遮擋圖示 -->
+    <ScrollView
+        android:id="@+id/dailyTasksExerciseScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/transparent"
+        android:fillViewport="false"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- 上方區塊：背景圖 + 簽到按鈕疊在上方 -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dailyTasksContentImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/rewards_daily_tasks"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/daily_tasks_screen" />
+
+                <!-- 簽到按鈕：對齊圖上按鈕位置 -->
+                <View
+                    android:id="@+id/dailyTasksCheckinButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </FrameLayout>
+
+            <!-- 運動量區塊：超慢跑可點擊 -->
+            <include layout="@layout/rewards_exercise_list_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部導覽：固定於畫面下方，不被捲動、不遮擋 -->
+    <View
+        android:id="@+id/dailyTasksNavWorkout"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/workout_screen_desc"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/dailyTasksNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/dailyTasksNavRewards"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/nav_rewards_desc"
+        android:focusable="true" />
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBF0"
+    android:fitsSystemWindows="false">
+
+    <TextView
+        android:id="@+id/staticLungeDetailBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="#6B2D3C"
+        android:textSize="28sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/close" />
+
+    <TextView
+        android:id="@+id/staticLungeDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="56dp"
+        android:text="@string/rewards_static_lunge"
+        android:textColor="#6B2D3C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="140dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circle_ring" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_exercise_lunge"
+            app:tint="#6B2D3C" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/staticLungeDetailTodayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="360dp"
+        android:text="@string/exercise_volume_today"
+        android:textColor="#2C2C2C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/staticLungeDetailHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="382dp"
+        android:text="@string/exercise_volume_hours"
+        android:textColor="#2C2C2C"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="420dp"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/staticLungeDetailCaloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="436dp"
+        android:text="@string/exercise_volume_calories_label"
+        android:textColor="#2C2C2C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/staticLungeDetailCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="458dp"
+        android:text="@string/exercise_volume_calories_value"
+        android:textColor="#2C2C2C"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/staticLungeDetailNavWorkout"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/workout_screen_desc" />
+
+    <View
+        android:id="@+id/staticLungeDetailNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/staticLungeDetailNavRewards"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/nav_rewards_desc" />
+</FrameLayout>

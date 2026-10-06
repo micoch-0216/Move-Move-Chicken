@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- 使用附上的深蹲圖片作為整頁 -->
+    <ImageView
+        android:id="@+id/squatContentImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/rewards_squat"
+        app:srcCompat="@drawable/squat_screen" />
+
+    <!-- 初級(藍)／中級(黃)／高級(紅)：透明圓形可點擊 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="112dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/btnBeginner"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/btnIntermediate"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/btnAdvanced"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- 左上角返回 -->
+    <TextView
+        android:id="@+id/squatBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="#FFFFFFFF"
+        android:textSize="28sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 中間內容區（是否開啟鏡頭）：點擊區底部留空不擋住導覽圖示 -->
+    <View
+        android:id="@+id/squatCameraIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="116dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/camera_open_front"
+        android:focusable="true" />
+
+    <!-- 底部導覽：左 運動頁 -->
+    <View
+        android:id="@+id/squatNavWorkout"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/workout_screen_desc"
+        android:focusable="true" />
+
+    <!-- 底部導覽：中 首頁 -->
+    <View
+        android:id="@+id/squatNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 底部導覽：右 獎勵頁 -->
+    <View
+        android:id="@+id/squatNavRewards"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/nav_rewards_desc"
+        android:focusable="true" />
+</FrameLayout>

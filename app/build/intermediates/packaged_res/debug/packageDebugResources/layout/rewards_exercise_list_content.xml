@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 運動量區塊：可滑動圖片 + 超慢跑可點擊區（隨滾動移動） -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/rewardsExerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/rewards_exercise_volume"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/rewards_exercise_list" />
+
+    <!-- 超慢跑列：可點擊區稍長，涵蓋第一列框格 -->
+    <View
+        android:id="@+id/rewardsExerciseSlowRunRow"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/rewards_super_slow_run"
+        android:focusable="true" />
+
+    <!-- 靜態弓箭步列：可點擊區對齊圖片上第二列框格（稍往下） -->
+    <View
+        android:id="@+id/rewardsExerciseStaticLungeRow"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/rewards_static_lunge"
+        android:focusable="true" />
+</FrameLayout>

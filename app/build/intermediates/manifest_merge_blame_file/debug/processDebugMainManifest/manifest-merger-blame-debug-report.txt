@@ -1,0 +1,347 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!-- 本應用以 Android 手機／行動裝置為主要目標 (mobile-first) -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="com.example.helloworld"
+5    android:versionCode="2"
+6    android:versionName="1.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+10        android:targetSdkVersion="35" />
+11
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:5:5-65
+12-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:5:22-62
+13
+14    <uses-feature
+14-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:6:5-85
+15        android:name="android.hardware.camera"
+15-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:6:19-57
+16        android:required="false" />
+16-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:6:58-82
+17    <uses-feature
+17-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:7:5-91
+18        android:name="android.hardware.camera.front"
+18-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:7:19-63
+19        android:required="false" />
+19-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:7:64-88
+20
+21    <!-- 以 Android 手機／行動裝置為主：觸控必備，不在 TV 主畫面顯示 -->
+22    <uses-feature
+22-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:10:5-89
+23        android:name="android.hardware.touchscreen"
+23-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:10:19-62
+24        android:required="true" />
+24-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:10:63-86
+25    <uses-feature
+25-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:11:5-87
+26        android:name="android.software.leanback"
+26-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:11:19-59
+27        android:required="false" />
+27-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:11:60-84
+28    <uses-feature
+28-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:12:5-88
+29        android:name="android.hardware.telephony"
+29-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:12:19-60
+30        android:required="false" />
+30-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:12:61-85
+31    <uses-feature
+31-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:13:5-94
+32        android:name="android.hardware.screen.portrait"
+32-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:13:19-66
+33        android:required="false" />
+33-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:13:67-91
+34    <uses-feature
+34-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:14:5-95
+35        android:name="android.hardware.screen.landscape"
+35-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:14:19-67
+36        android:required="false" />
+36-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:14:68-92
+37
+38    <!-- 以手機為主要裝置：支援各尺寸手機螢幕 -->
+39    <supports-screens
+39-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:17:5-22:37
+40        android:anyDensity="true"
+40-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:22:9-34
+41        android:largeScreens="true"
+41-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:20:9-36
+42        android:normalScreens="true"
+42-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:19:9-37
+43        android:smallScreens="true"
+43-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:18:9-36
+44        android:xlargeScreens="true" />
+44-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:21:9-37
+45
+46    <permission
+46-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+47        android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+47-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+48        android:protectionLevel="signature" />
+48-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+49
+50    <uses-permission android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+50-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+50-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+51    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+52    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+52-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:5-79
+52-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:22-76
+53    <uses-permission android:name="android.permission.INTERNET" />
+53-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:26:5-67
+53-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:26:22-64
+54
+55    <application
+55-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:24:5-91:19
+56        android:allowBackup="true"
+56-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:25:9-35
+57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+57-->[androidx.core:core:1.12.0] C:\Users\user\.gradle\caches\8.9\transforms\ba37b34bdf3734abe81b412972f35aab\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+58        android:debuggable="true"
+59        android:enableOnBackInvokedCallback="true"
+59-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:31:9-51
+60        android:extractNativeLibs="false"
+61        android:icon="@drawable/ic_launcher"
+61-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:26:9-45
+62        android:label="@string/app_name"
+62-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:27:9-41
+63        android:roundIcon="@drawable/ic_launcher"
+63-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:28:9-50
+64        android:supportsRtl="true"
+64-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:29:9-35
+65        android:theme="@style/Theme.HelloWorld" >
+65-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:30:9-48
+66        <activity
+66-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:32:9-41:20
+67            android:name="com.example.helloworld.MainActivity"
+67-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:33:13-41
+68            android:exported="true"
+68-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:34:13-36
+69            android:launchMode="singleTop" >
+69-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:35:13-43
+70            <intent-filter>
+70-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:36:13-40:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:37:17-69
+71-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:37:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:38:17-77
+73-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:38:27-74
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:39:17-76
+74-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:39:27-73
+75            </intent-filter>
+76        </activity>
+77        <activity
+77-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:42:9-45:55
+78            android:name="com.example.helloworld.WardrobeActivity"
+78-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:43:13-45
+79            android:exported="false"
+79-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:44:13-37
+80            android:theme="@style/Theme.HelloWorld" />
+80-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:45:13-52
+81        <activity
+81-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:46:9-49:55
+82            android:name="com.example.helloworld.WorkoutActivity"
+82-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:47:13-44
+83            android:exported="false"
+83-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:48:13-37
+84            android:theme="@style/Theme.HelloWorld" />
+84-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:49:13-52
+85        <activity
+85-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:50:9-53:55
+86            android:name="com.example.helloworld.SlowRunActivity"
+86-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:51:13-44
+87            android:exported="false"
+87-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:52:13-37
+88            android:theme="@style/Theme.HelloWorld" />
+88-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:53:13-52
+89        <activity
+89-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:54:9-57:55
+90            android:name="com.example.helloworld.StaticLungeActivity"
+90-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:55:13-48
+91            android:exported="false"
+91-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:56:13-37
+92            android:theme="@style/Theme.HelloWorld" />
+92-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:57:13-52
+93        <activity
+93-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:58:9-61:55
+94            android:name="com.example.helloworld.ShoulderStretchActivity"
+94-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:59:13-52
+95            android:exported="false"
+95-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:60:13-37
+96            android:theme="@style/Theme.HelloWorld" />
+96-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:61:13-52
+97        <activity
+97-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:62:9-65:55
+98            android:name="com.example.helloworld.SquatActivity"
+98-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:63:13-42
+99            android:exported="false"
+99-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:64:13-37
+100            android:theme="@style/Theme.HelloWorld" />
+100-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:65:13-52
+101        <activity
+101-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:66:9-69:55
+102            android:name="com.example.helloworld.StepExerciseActivity"
+102-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:67:13-49
+103            android:exported="false"
+103-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:68:13-37
+104            android:theme="@style/Theme.HelloWorld" />
+104-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:69:13-52
+105        <activity
+105-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:70:9-74:55
+106            android:name="com.example.helloworld.FrontCameraActivity"
+106-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:71:13-48
+107            android:exported="false"
+107-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:72:13-37
+108            android:screenOrientation="portrait"
+108-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:73:13-49
+109            android:theme="@style/Theme.HelloWorld" />
+109-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:74:13-52
+110        <activity
+110-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:75:9-78:55
+111            android:name="com.example.helloworld.RewardsActivity"
+111-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:76:13-44
+112            android:exported="false"
+112-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:77:13-37
+113            android:theme="@style/Theme.HelloWorld" />
+113-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:78:13-52
+114        <activity
+114-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:79:9-82:55
+115            android:name="com.example.helloworld.SlowRunDetailActivity"
+115-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:80:13-50
+116            android:exported="false"
+116-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:81:13-37
+117            android:theme="@style/Theme.HelloWorld" />
+117-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:82:13-52
+118        <activity
+118-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:83:9-86:55
+119            android:name="com.example.helloworld.StaticLungeDetailActivity"
+119-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:84:13-54
+120            android:exported="false"
+120-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:85:13-37
+121            android:theme="@style/Theme.HelloWorld" />
+121-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:86:13-52
+122        <activity
+122-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:87:9-90:55
+123            android:name="com.example.helloworld.DailyTasksActivity"
+123-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:88:13-47
+124            android:exported="false"
+124-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:89:13-37
+125            android:theme="@style/Theme.HelloWorld" />
+125-->C:\Users\user\Dropbox\code\helloworld\app\src\main\AndroidManifest.xml:90:13-52
+126
+127        <service
+127-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:24:9-33:19
+128            android:name="androidx.camera.core.impl.MetadataHolderService"
+128-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:25:13-75
+129            android:enabled="false"
+129-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:26:13-36
+130            android:exported="false" >
+130-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:30:13-32:89
+132                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+132-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:31:17-103
+133                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+133-->[androidx.camera:camera-camera2:1.3.4] C:\Users\user\.gradle\caches\8.9\transforms\d07ef5a1408050f61f6c66898b74e9db\transformed\camera-camera2-1.3.4\AndroidManifest.xml:32:17-86
+134        </service>
+135
+136        <provider
+136-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+137            android:name="androidx.startup.InitializationProvider"
+137-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+138            android:authorities="com.example.helloworld.androidx-startup"
+138-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+139            android:exported="false" >
+139-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+140            <meta-data
+140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+141                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+141-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+142                android:value="androidx.startup" />
+142-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\8.9\transforms\c3629b421ebe05b4bd60592e9e424267\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+143            <meta-data
+143-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\user\.gradle\caches\8.9\transforms\9b948e6236ec43ea59d8bfe9b98cc33b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+144-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\user\.gradle\caches\8.9\transforms\9b948e6236ec43ea59d8bfe9b98cc33b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+145                android:value="androidx.startup" />
+145-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\user\.gradle\caches\8.9\transforms\9b948e6236ec43ea59d8bfe9b98cc33b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+148                android:value="androidx.startup" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+149        </provider>
+150
+151        <receiver
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+152            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+153            android:directBootAware="false"
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+154            android:enabled="true"
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+155            android:exported="true"
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+156            android:permission="android.permission.DUMP" >
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+157            <intent-filter>
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+158                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+159            </intent-filter>
+160            <intent-filter>
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+161                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+162            </intent-filter>
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+164                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+167                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\8.9\transforms\dc6d9650f1d5a58613c2fbf2171dc2d3\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+168            </intent-filter>
+169        </receiver>
+170
+171        <service
+171-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+172            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+172-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+173            android:exported="false" >
+173-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+174            <meta-data
+174-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+175                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+175-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+176                android:value="cct" />
+176-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\cb0705adb81f8cdfc0b9689537719193\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+177        </service>
+178        <service
+178-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+179            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+179-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+180            android:exported="false"
+180-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+181            android:permission="android.permission.BIND_JOB_SERVICE" >
+181-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+182        </service>
+183
+184        <receiver
+184-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+185            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+185-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+186            android:exported="false" />
+186-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\user\.gradle\caches\8.9\transforms\487f13d27dd3e64900fddd7c4304c3b6\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+187    </application>
+188
+189</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本應用以 Android 手機／行動裝置為主要目標 (mobile-first) -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <!-- 以 Android 手機／行動裝置為主：觸控必備，不在 TV 主畫面顯示 -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+
+    <!-- 以手機為主要裝置：支援各尺寸手機螢幕 -->
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloWorld"
+        android:enableOnBackInvokedCallback="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WardrobeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".SlowRunActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".StaticLungeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".ShoulderStretchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".SquatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".StepExerciseActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".FrontCameraActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".SlowRunDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".StaticLungeDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".DailyTasksActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelloWorld" />
+    </application>
+
+</manifest>

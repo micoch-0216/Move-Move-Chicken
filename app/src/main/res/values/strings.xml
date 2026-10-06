@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App</string>
+    <string name="hello_world">hello world，\n你好世界</string>
+    <string name="home_image_desc">首頁插圖</string>
+    <string name="wardrobe_bg_desc">衣櫃畫面背景</string>
+    <string name="workout_screen_desc">運動頁</string>
+    <string name="workout_list_desc">運動項目列表</string>
+    <string name="camera_open_front">開啟前鏡頭</string>
+    <string name="close">關閉</string>
+    <string name="nav_rewards_desc">獎勵</string>
+    <string name="rewards_checkin_claim">簽到以領取獎勵</string>
+    <string name="rewards_daily_tasks">每日任務</string>
+    <string name="rewards_weekly_tasks">每週任務</string>
+    <string name="rewards_exercise_volume">運動量</string>
+    <string name="rewards_super_slow_run">超慢跑</string>
+    <string name="rewards_static_lunge">靜態弓箭步</string>
+    <string name="rewards_step_exercise">踏階運動</string>
+    <string name="rewards_squat">深蹲</string>
+    <string name="rewards_shoulder_stretch">肩部伸展</string>
+    <string name="daily_tasks_weekly">每週任務</string>
+    <string name="weekly_slow_run">每週七次超慢跑</string>
+    <string name="weekly_static_lunge">每週七次靜態弓箭步</string>
+    <string name="weekly_shoulder_stretch">每週七次肩部伸展</string>
+    <string name="weekly_step">每週七次踏階運動</string>
+    <string name="weekly_squat">每週七次深蹲</string>
+    <string name="difficulty_beginner">初級</string>
+    <string name="difficulty_intermediate">中級</string>
+    <string name="difficulty_advanced">高級</string>
+    <string name="camera_elapsed_time">已進行 %1$s</string>
+    <string name="camera_distance_hint">請保持全身入鏡，骨架完整即可開始倒數</string>
+    <string name="camera_skeleton_detected">骨架完整，開始計時</string>
+    <string name="camera_skeleton_points">目前 %1$d 個骨架點（完整即可開始）</string>
+    <string name="camera_distance_no_detect">無法偵測距離，請自行保持約 2 公尺後開始</string>
+    <string name="exercise_volume_today">今日已運動</string>
+    <string name="exercise_volume_hours">%1$d/%2$d 小時</string>
+    <string name="exercise_volume_hours_decimal">%1$.1f/%2$d 小時</string>
+    <string name="exercise_volume_calories_label">消耗的卡路里</string>
+    <string name="exercise_volume_calories_value">%d 大卡</string>
+    <string name="pose_feedback_correct">姿勢正確</string>
+    <string name="pose_feedback_wrong">請調整姿勢</string>
+    <string name="achievement_section_title">成就勳章</string>
+    <string name="achievement_first_slow_run">首次超慢跑</string>
+    <string name="achievement_weekly_3">本週達標 3 次</string>
+    <string name="achievement_15min">單次 15 分鐘</string>
+    <string name="achievement_none">尚無已解鎖成就，完成運動即可解鎖</string>
+</resources>

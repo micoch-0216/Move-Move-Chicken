@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- 第一張圖：運動頁背景 -->
+    <ImageView
+        android:id="@+id/workoutBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/workout_screen_desc"
+        app:srcCompat="@drawable/workout_screen" />
+
+    <!-- 中間可滑動長圖（與衣櫃頁長圖下方留白一致，不遮住黑框） -->
+    <ScrollView
+        android:id="@+id/workoutScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="96dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/workoutListImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/workout_list_desc"
+                app:srcCompat="@drawable/workout_list" />
+
+            <!-- 五格可點擊區：與超慢跑連結相同大小（120dp 高），超慢跑以外各往下移一點 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+                <!-- 超慢跑：基準連結，可點擊區 120dp 高 -->
+                <View
+                    android:id="@+id/cardSlowRun"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="120dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+                <!-- 靜態弓箭步：往下移一點，可點擊區與超慢跑同大 -->
+                <View
+                    android:id="@+id/cardStaticLunge"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="120dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+                <!-- 踏階運動：往下移一點，可點擊區與超慢跑同大 -->
+                <View
+                    android:id="@+id/cardStepUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="120dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+                <!-- 深蹲：往下移一點，可點擊區與超慢跑同大 -->
+                <View
+                    android:id="@+id/cardSquat"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="120dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+                <!-- 肩部伸展：往下移一點，可點擊區與超慢跑同大（120dp 高） -->
+                <View
+                    android:id="@+id/cardShoulderStretch"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="120dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- 中下方房子：點擊回到首頁 -->
+    <View
+        android:id="@+id/workoutNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 右下方圖示：點擊進入打卡頁 -->
+    <View
+        android:id="@+id/workoutNavRewards"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/nav_rewards_desc"
+        android:focusable="true" />
+
+</FrameLayout>

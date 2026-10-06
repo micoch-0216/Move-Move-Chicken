@@ -1,0 +1,306 @@
+[
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_daily_tasks_card.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_daily_tasks_card.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_exercise_list.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_exercise_list.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_shoulder_stretch_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/shoulder_stretch_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_exercise_squat.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_exercise_squat.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_level_intermediate.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_level_intermediate.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_screen_after_checkin.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_screen_after_checkin.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_staticlunge.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_staticlunge.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_exercise_list.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_exercise_list.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_level_beginner.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_level_beginner.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page_banana.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page_banana.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_weekly_task_done.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_weekly_task_done.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_daily_tasks_list.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_daily_tasks_list.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_page2.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_page2.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_cards.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_cards.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_static_lunge_advanced.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/static_lunge_advanced.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_static_lunge_beginner.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/static_lunge_beginner.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_slowrun_intermediate.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/slowrun_intermediate.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_step_exercise_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/step_exercise_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_item_wardrobe_page.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/item_wardrobe_page.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_daily_tasks.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_daily_tasks.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_checkin_button.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_checkin_button.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_sporty_water.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_sporty_water.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_sporty.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_sporty.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_slowrun_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/slowrun_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_item_exercise_row.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/item_exercise_row.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_halloween_water.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_halloween_water.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_halloween_banana.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_halloween_banana.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page_newyear_water.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page_newyear_water.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_halloween.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_halloween.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_page1.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_page1.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_rewards.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_rewards.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_static_lunge.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/static_lunge.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_slow_run_detail.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_slow_run_detail.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_bg.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_bg.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_slowrun_beginner.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/slowrun_beginner.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_wardrobe_sporty_banana.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/wardrobe_sporty_banana.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_static_lunge_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/static_lunge_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_wardrobe.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_wardrobe.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_slowrun.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_slowrun.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_slowrun_advanced.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/slowrun_advanced.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_daily_tasks.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_daily_tasks.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_circle_ring.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_circle_ring.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page_newyear_banana.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page_newyear_banana.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_rewards_daily_tasks_content.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/rewards_daily_tasks_content.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_exercise_shoulder.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_exercise_shoulder.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page_water.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page_water.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_front_camera.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_front_camera.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_squat_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/squat_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_launcher.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_screen_after_checkin.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_screen_after_checkin.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_exercise_slow_run.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_exercise_slow_run.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_exercise_step.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_exercise_step.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_workout_list.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/workout_list.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_shoulder_stretch.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_shoulder_stretch.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_arrow_exercise.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_arrow_exercise.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_bottom.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_bottom.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_weekly_task_row.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_weekly_task_row.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_rewards_exercise_list_content.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/rewards_exercise_list_content.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_exercise_section.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_exercise_section.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_ic_exercise_lunge.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/ic_exercise_lunge.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_workout.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_workout.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_level_advanced.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_level_advanced.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_home_page_newyear.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/home_page_newyear.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_workout_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/workout_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_squat.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_squat.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_screen.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_screen.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_static_lunge_detail.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_static_lunge_detail.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_content.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_content.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_bg_exercise_card.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/bg_exercise_card.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/layout_activity_step_exercise.xml.flat",
+        "source": "com.example.helloworld.app-main-38:/layout/activity_step_exercise.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_daily_tasks_frame.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/daily_tasks_frame.png"
+    },
+    {
+        "merged": "com.example.helloworld.app-debug-36:/drawable_static_lunge_intermediate.png.flat",
+        "source": "com.example.helloworld.app-main-38:/drawable/static_lunge_intermediate.png"
+    }
+]

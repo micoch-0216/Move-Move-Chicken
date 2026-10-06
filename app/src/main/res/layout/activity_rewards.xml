@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- 使用您提供的獎勵頁圖片作為整頁背景 -->
+    <ImageView
+        android:id="@+id/rewardsContentImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/nav_rewards_desc"
+        app:srcCompat="@drawable/rewards_screen" />
+
+    <!-- 左上角返回 -->
+    <View
+        android:id="@+id/rewardsBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/close"
+        android:focusable="true" />
+
+    <!-- 簽到以領取獎勵按鈕：對齊圖片上按鈕位置（可點區稍往上） -->
+    <View
+        android:id="@+id/rewardsCheckinButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="240dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 每日任務（僅裝飾，無點擊） -->
+    <View
+        android:id="@+id/rewardsDailyTasksRow"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/rewards_daily_tasks" />
+
+    <!-- 運動量區塊：可垂直滑動，自「運動量」下方開始，不遮住上方標題與下方導覽圖示 -->
+    <ScrollView
+        android:id="@+id/rewardsExerciseScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:overScrollMode="ifContentScrolls">
+        <include layout="@layout/rewards_exercise_list_content" />
+    </ScrollView>
+
+    <!-- 底部導覽：左下方圖示進入運動頁 -->
+    <View
+        android:id="@+id/rewardsNavWorkout"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/workout_screen_desc"
+        android:focusable="true" />
+
+    <!-- 底部導覽：中間房子回首頁 -->
+    <View
+        android:id="@+id/rewardsNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</FrameLayout>

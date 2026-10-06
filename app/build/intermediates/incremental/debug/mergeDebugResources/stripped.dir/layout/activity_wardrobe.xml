@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- 滿版背景 -->
+    <ImageView
+        android:id="@+id/wardrobeBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/wardrobe_bg_desc"
+        app:srcCompat="@drawable/wardrobe_bg" />
+
+    <!-- 中間可垂直滑動的長圖（留邊距，不遮住下方黑色導覽列） -->
+    <ScrollView
+        android:id="@+id/wardrobeScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="72dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wardrobeCardsImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/wardrobe_bg_desc"
+                app:srcCompat="@drawable/wardrobe_cards" />
+
+            <!-- 運動雞那一格（第一張卡）：點擊顯示運動雞大圖 -->
+            <View
+                android:id="@+id/sportyCardArea"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="top"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- 新年快樂那一格（新圖第二張卡）：點擊把首頁換成新年圖，與之前設定相同 -->
+            <View
+                android:id="@+id/newyearCardArea"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="280dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- 萬聖雞那一格（第四張卡）：點擊顯示萬聖雞大圖，圖上衣櫃／水壺／香蕉可點擊 -->
+            <View
+                android:id="@+id/halloweenCardArea"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="840dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true" />
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- 關閉按鈕：顏色明顯、放大 -->
+    <TextView
+        android:id="@+id/wardrobeClose"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:text="×"
+        android:textColor="#DD000000"
+        android:textSize="40sp" />
+
+    <!-- 中下方房子：點擊回到首頁 -->
+    <View
+        android:id="@+id/wardrobeNavHome"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 運動雞大圖覆蓋層：衣櫃／水壺／香蕉可點擊（與新年、萬聖一樣） -->
+    <FrameLayout
+        android:id="@+id/sportyOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sportyOverlayImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/wardrobe_bg_desc"
+                app:srcCompat="@drawable/wardrobe_sporty"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/sportyWardrobeArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.55"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintVertical_bias="0.32" />
+
+            <View
+                android:id="@+id/sportyWaterArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintWidth_percent="0.14"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintVertical_bias="0.78" />
+
+            <View
+                android:id="@+id/sportyBananaArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.18"
+                app:layout_constraintWidth_percent="0.16"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintVertical_bias="0.36" />
+
+            <!-- 左下方：點擊導向運動選擇頁（與首頁肌肉區同位置） -->
+            <View
+                android:id="@+id/sportyNavMuscle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/sportyOverlayClose"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#DD000000"
+                android:textSize="40sp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <!-- 萬聖雞大圖覆蓋層：衣櫃／水壺／香蕉可點擊（與首頁同位置） -->
+    <FrameLayout
+        android:id="@+id/halloweenOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/halloweenOverlayImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/wardrobe_bg_desc"
+                app:srcCompat="@drawable/wardrobe_halloween"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/halloweenWardrobeArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.55"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintVertical_bias="0.32" />
+
+            <View
+                android:id="@+id/halloweenWaterArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintWidth_percent="0.14"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintVertical_bias="0.78" />
+
+            <View
+                android:id="@+id/halloweenBananaArea"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.18"
+                app:layout_constraintWidth_percent="0.16"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintVertical_bias="0.36" />
+
+            <!-- 左下方：點擊導向運動選擇頁（與首頁肌肉區同位置） -->
+            <View
+                android:id="@+id/halloweenNavMuscle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/halloweenOverlayClose"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#DD000000"
+                android:textSize="40sp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</FrameLayout>
